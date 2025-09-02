@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Расписание — 3 человека</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app" id="app">
+      <header>
+        <div class="person-controls">
+          <button class="btn btn-ghost" id="prev">⟵</button>
+          <div class="name-badge" id="nameBadge">
+            <span class="dot" id="colorDot"></span>
+            <strong id="personName">Имя</strong>
+          </div>
+          <button class="btn btn-ghost" id="next">⟶</button>
+                      <h2 class="h2" style="display: flex; text-align: center;">Рассписание</h2>
+
+        </div>
+        <div class="tabs" id="tabs"></div>
+      </header>
+
+      <section class="grid" id="grid"></section>
+
+      <footer>
+        <div class="hint">Подсказка: используйте клавиши ◀ ▶ для переключения между людьми.</div>
+        <button class="btn btn-accent" id="todayBtn">Сегодня</button>
+      </footer>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
